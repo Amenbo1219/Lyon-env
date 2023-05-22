@@ -34,7 +34,6 @@ docker compose build
 ```bash
 docker compose up -d
 ```
-
 ブラウザから http://接続したホスト名:9999 にログインする
 
 # Note
@@ -57,21 +56,18 @@ docker compose up -d
     ```
 * Jupyterにパスワードを設定したい
 
-　　コンテナが起動しているものとする。
-  
+    　　コンテナが起動しているものとする。
+
     ```bash
     docker compose up -d
     ```
-
-   コンテナにパスワードを設定する
-  
-  ```bash
+    コンテナにパスワードを設定する
+    ```bash
     $ docker-compose exec py3 bash
-     以下、コンテナの中
+    --- 以下、コンテナの中
     # jupyter notebook password
     # exit
-    
-    コンテナを再起動
+    --- コンテナを再起動
     $ docker-compose down
     $ docker-compose up -d
     ```
