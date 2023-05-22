@@ -60,13 +60,16 @@ docker compose up -d
     ```bash
     docker compose up -d
     ```
-    コンテナにパスワードを設定する
+
+   コンテナにパスワードを設定する
     ```bash
     $ docker-compose exec py3 bash
     --- 以下、コンテナの中
     # jupyter notebook password
     # exit
-    --- コンテナを再起動
+    ---
+    
+    コンテナを再起動
     $ docker-compose down
     $ docker-compose up -d
     ```
