@@ -67,10 +67,10 @@ docker compose up -d
   
   ```bash
     $ docker-compose exec py3 bash
-    --- 以下、コンテナの中
+     以下、コンテナの中
     # jupyter notebook password
     # exit
-    ---  
+    
     コンテナを再起動
     $ docker-compose down
     $ docker-compose up -d
