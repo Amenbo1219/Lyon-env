@@ -55,6 +55,7 @@ docker compose up -d
     docker compose logs
     ```
 * Jupyterにパスワードを設定したい
+
 　　コンテナが起動しているものとする。
     ```bash
     docker compose up -d
