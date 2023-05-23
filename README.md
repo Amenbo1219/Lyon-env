@@ -71,6 +71,22 @@ docker compose up -d
     $ docker-compose down
     $ docker-compose up -d
     ```
+* おすすめのイメージは？
+
+    この辺のイメージがおすすめです
+
+    * [Tensorflow系を使う場合|DockerHub](https://hub.docker.com/r/tensorflow/tensorflow/tags)
+
+    * [Pytorch系を使う場合|DockerHub](https://hub.docker.com/r/pytorch/pytorch/tags)
+
+    * [Cudaを使う場合|DockerHub](https://hub.docker.com/r/nvidia/cuda/tags)
+
+    * [LyonにDockerComposeをインストールする｜特定環境を使う場合](https://sites.google.com/edu.teu.ac.jp/cscloud#h.d6y8bo3ee6h1)
+
+* Tensorflowのイメージには何が含まれていますか？
+
+     [テスト済みのビルド構成|Tensorflow](https://www.tensorflow.org/install/source?hl=ja#gpu)
+
 
 
 # Author
@@ -78,6 +94,6 @@ docker compose up -d
 作成情報を列挙する
 
 * 作成者：Amembo1219
-* 所属：Faculty of Computer Science,Tokyo University of Technology 
-* E-mail: c0b20140d0@edu.teu.ac.jp
+* 所属：Faculty of Science, Tokyo University of Technology Computer 
+* E-mail c0b20140d0@edu.teu.ac.jp
 
