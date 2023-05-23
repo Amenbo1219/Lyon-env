@@ -94,6 +94,6 @@ docker compose up -d
 作成情報を列挙する
 
 * 作成者：Amembo1219
-* 所属：Faculty of Science, Tokyo University of Technology Computer 
+* 所属：Faculty of Computer Science, Tokyo University of Technology 
 * E-mail c0b20140d0@edu.teu.ac.jp
 
