@@ -4,7 +4,8 @@ services:
     build:
       context: ./py3
       dockerfile: Dockerfile
-    shm_size: '24gb'
+    # メモリのサイズを変える
+    shm_size: '8gb'
     restart: always
     entrypoint: >
       jupyter-lab
@@ -17,7 +18,7 @@ services:
       - "8888"
     #ここの左のポート番号を好きな値に設定 
     ports:
-      - "9999:8888"
+      - "8888:8888"
     volumes:
       - ./py3/root_jupyter:/root/.jupyter
       - ./workspace:/workspace
