@@ -89,12 +89,12 @@ docker compose up -d
 
 # ReleaseNote
 ## 2023-05-22　Version1.0-release
-*　ファストコミット。
+* ファストコミット。
 ## 2023-05-22　Version1.0a-release
 * デフォルトの共用メモリの容量を変更しました
 ## 2023-05-22　Version1.0b-release
-*　README.mdを更新しました。
-*　環境構築手法・参考文献・作成者情報を添付しました。
+* README.mdを更新しました。
+ 環境構築手法・参考文献・作成者情報を添付しました。
 ## 2023-06-24　Version1.1-release
 * Compose上の共用メモリの記載に一部誤りがありましたので修正しました。
 * DEMOスクリプトにCycleＧanのスクリプトを追加しました。
