@@ -101,7 +101,9 @@ docker compose up -d
 ## 2023-06-24　Version1.1a-release
 * README.mdを更新しました。
 * Version情報を追記しました。
-
+## 2023-11-03　Version1.1b-release
+* README.mdを更新しました。
+* GPUIDの指定を行いました．
 # Author
 
 作成情報を列挙する
