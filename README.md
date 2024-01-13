@@ -1,4 +1,4 @@
-# Lyon-env　version:1.1a
+# Lyon-env　version:1.1b
 
 東京工科大学CS学部人工知能サーバーLyonにJupyterLabを利用したディープラーニングの学習環境を構築するDocker-Composeファイルとその他システムファイルになります。
 イメージ自体はNvidia-Dockerが動作する環境であれば、Linuxでも動作いたします。
@@ -38,6 +38,8 @@ docker compose up -d
 
 # Note
 
+* ビルドを早くしたい
+    起動の際にライブラリの数を減らしたliteブランチとpytorchのブランチを作成しました．
 * Pythonの他ライブラリを追加したい
 
      [py3/requirements.txt](py3/requirements.txt)に追加したいモジュールを追加する。
@@ -104,6 +106,9 @@ docker compose up -d
 ## 2023-11-03　Version1.1b-release
 * README.mdを更新しました。
 * GPUIDの指定を行いました．
+## 2023-01-13　Version1.1b-release
+* lite(軽量版)とtorch(Pytorch版)のブランチを作成しました。
+* README.mdを更新しました。
 # Author
 
 作成情報を列挙する
