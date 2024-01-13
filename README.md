@@ -23,11 +23,11 @@ GPUを使わないシステム環境となっています．
 
 GitHubからシステムを取得する
 ```bash
-git clone https://github.com/Amenbo1219/Lyon-env-lite.git
+git clone -b lite https://github.com/Amenbo1219/Lyon-env
 ```
 Lyon-Envのディレクトリに移動する
 ```bash
-cd Lyon-env-lite
+cd Lyon-env
 ```
 Docker-compose をビルドする
 ```bash
