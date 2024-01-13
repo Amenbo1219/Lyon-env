@@ -5,7 +5,7 @@ services:
       context: ./py3
       dockerfile: Dockerfile
     # メモリのサイズを変える
-    shm_size: '8gb'
+    shm_size: '24gb'
     restart: always
     entrypoint: >
       jupyter-lab
@@ -22,14 +22,3 @@ services:
     volumes:
       - ./py3/root_jupyter:/root/.jupyter
       - ./workspace:/workspace
-
-    #GPUを使う場合の設定
-    environment:
-      - "NVIDIA_VISIBLE_DEVICES=all"
-      - "NVIDIA_DRIVER_CAPABILITIES=all"
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - capabilities:
-              - gpu

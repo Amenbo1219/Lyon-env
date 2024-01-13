@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:2.12.0-gpu 
+FROM python:3.8.18-slim-bullseye
 
 RUN ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 
@@ -13,13 +13,13 @@ RUN apt-get update && apt-get install -y \
     libxrender1  \ 
     libxext6 \
     libgl1-mesa-dev \
+    build-essential \
+    cmake \
+    curl \
 &&  apt-get clean \
 &&  rm -rf /var/lib/apt/lists/*
 # JupyterLab関連のパッケージ（いくつかの拡張機能を含む）
 # 必要に応じて、JupyterLabの拡張機能などを追加してください
-
-RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-
 # 研究室用追加パッケージ
 RUN pip install --no-cache-dir \
     pip install praat-parselmouth
@@ -29,4 +29,3 @@ COPY requirements.txt /install/requirements.txt
 RUN pip3 install --upgrade pip
 RUN pip3 install -r /install/requirements.txt
 
-RUN export TF_CPP_MIN_LOG_LEVEL=2

@@ -1,9 +1,12 @@
-# Lyon-env　version:1.1a
+# Lyon-env-lite　version:0.1
 
-東京工科大学CS学部人工知能サーバーLyonにJupyterLabを利用したディープラーニングの学習環境を構築するDocker-Composeファイルとその他システムファイルになります。
-イメージ自体はNvidia-Dockerが動作する環境であれば、Linuxでも動作いたします。
+Lyon-envの軽量版です．
+GPUを使わないシステム環境となっています．
+
 
 [Lyon公式ページ](https://sites.google.com/edu.teu.ac.jp/cscloud)
+[Lyon-env](https://github.com/Amenbo1219/Lyon-env)
+
 
 # Requirement
 
@@ -20,11 +23,11 @@
 
 GitHubからシステムを取得する
 ```bash
-git clone https://github.com/Amenbo1219/Lyon-env.git
+git clone https://github.com/Amenbo1219/Lyon-env-lite.git
 ```
 Lyon-Envのディレクトリに移動する
 ```bash
-cd Lyon-env
+cd Lyon-env-lite
 ```
 Docker-compose をビルドする
 ```bash
@@ -45,7 +48,7 @@ docker compose up -d
 
      [py3/Dockerfile](py3/Dockerfile)に追加したいモジュールを追加する。
 
-* ポート番号の変更・GPUメモリの割当量を変更したい
+* ポート番号の変更を変更したい
 
      [docker-compose.yml](docker-compose.yml)を変更する。
 * JupyterのTokenを確認したい
@@ -88,19 +91,8 @@ docker compose up -d
      [テスト済みのビルド構成|Tensorflow](https://www.tensorflow.org/install/source?hl=ja#gpu)
 
 # ReleaseNote
-## 2023-05-22　Version1.0-release
-* ファストコミット。
-## 2023-05-22　Version1.0a-release
-* デフォルトの共用メモリの容量を変更しました
-## 2023-05-22　Version1.0b-release
-* README.mdを更新しました。
- 環境構築手法・参考文献・作成者情報を添付しました。
-## 2023-06-24　Version1.1-release
-* Compose上の共用メモリの記載に一部誤りがありましたので修正しました。
-* DEMOスクリプトにCycleＧanのスクリプトを追加しました。
-## 2023-06-24　Version1.1a-release
-* README.mdを更新しました。
-* Version情報を追記しました。
+## 2024-01-13　Version0.1-release
+* ファストコミット
 
 # Author
 
