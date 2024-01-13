@@ -170,10 +170,10 @@ jupyter-client==6.1.12
 jupyter-console==6.1.0
 jupyter-server==1.24.0
 jupyter_core==5.5.0
+jupyterlab
 jupyterlab-widgets==3.0.9
 jupyterlab_pygments==0.3.0
 kaggle==1.5.16
-keras==2.14.0
 keyring==23.5.0
 kiwisolver==1.4.5
 langcodes==3.3.0
@@ -278,7 +278,6 @@ prophet==1.1.5
 proto-plus==1.22.3
 protobuf==3.20.3
 psutil==5.9.5
-psycopg2==2.9.9
 ptyprocess==0.7.0
 py-cpuinfo==9.0.0
 py4j==0.10.9.7

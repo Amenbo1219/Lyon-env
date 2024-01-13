@@ -20,7 +20,7 @@
 
 GitHubからシステムを取得する
 ```bash
-git clone https://github.com/Amenbo1219/Lyon-env.git
+git clone -b torch https://github.com/Amenbo1219/Lyon-env.git
 ```
 Lyon-Envのディレクトリに移動する
 ```bash
@@ -37,6 +37,8 @@ docker compose up -d
 ブラウザから http://接続したホスト名:9999 にログインする
 
 # Note
+* ビルドを早くしたい
+    起動の際にライブラリの数を減らしたliteブランチとpytorchのブランチを作成しました．
 
 * Pythonの他ライブラリを追加したい
 
@@ -101,6 +103,9 @@ docker compose up -d
 ## 2023-06-24　Version1.1a-release
 * README.mdを更新しました。
 * Version情報を追記しました。
+## 2023-01-13　Version1.1b-release
+* lite(軽量版)とtorch(Pytorch版)のブランチを作成しました。
+* README.mdを更新しました。
 
 # Author
 
