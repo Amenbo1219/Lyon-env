@@ -4,17 +4,9 @@ RUN ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 
 # パッケージの追加とタイムゾーンの設定
 # 必要に応じてインストールするパッケージを追加してください
-RUN apt-get update && apt-get install -y \ 
+RUN apt-get update && apt-get install -y \
     tzdata \
-    git \ 
-    wget \
-    libglib2.0-0 \
-    libsm6  \ 
-    libxrender1  \ 
-    libxext6 \
-    libgl1-mesa-dev \
-    build-essential \
-    cmake \
+    git \
     curl \
 &&  apt-get clean \
 &&  rm -rf /var/lib/apt/lists/*
@@ -28,4 +20,3 @@ RUN pip install --no-cache-dir \
 COPY requirements.txt /install/requirements.txt
 RUN pip3 install --upgrade pip
 RUN pip3 install -r /install/requirements.txt
-
