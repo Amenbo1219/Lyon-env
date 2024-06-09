@@ -111,11 +111,13 @@ docker compose up -d
 * README.mdを更新しました。
 ## 2024-06-09　Version1.1d-release
 * Pytorchのバージョンを固定にしました．
+* README.mdを更新しました。
+* Author情報を更新しました．
 # Author
 
 作成情報を列挙する
 
 * 作成者：Amembo1219
 * 所属：Faculty of Computer Science, Tokyo University of Technology 
-* E-mail c0b20140d0@edu.teu.ac.jp
+* E-mail g212403591@edu.teu.ac.jp
 
