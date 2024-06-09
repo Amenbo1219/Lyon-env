@@ -106,10 +106,10 @@ docker compose up -d
 ## 2023-11-03　Version1.1b-release
 * README.mdを更新しました。
 * GPUIDの指定を行いました．
-## 2023-01-13　Version1.1c-release
+## 2024-01-13　Version1.1c-release
 * lite(軽量版)とtorch(Pytorch版)のブランチを作成しました。
 * README.mdを更新しました。
-## 2023-01-13　Version1.1d-release
+## 2024-06-09　Version1.1d-release
 * Pytorchのバージョンを固定にしました．
 # Author
 
