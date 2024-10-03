@@ -28,7 +28,7 @@ RUN apt-get update && apt-get install -y \
 
 # 研究室用追加パッケージ
 RUN pip install --no-cache-dir \
-    pip install praat-parselmouth
+    praat-parselmouth
 
 #　追加パッケージのインストール
 COPY requirements.txt /install/requirements.txt
