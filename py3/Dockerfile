@@ -1,5 +1,4 @@
 FROM tensorflow/tensorflow:2.17.0-gpu
-FROM python:3.10
 
 # タイムゾーンの設定
 RUN ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
