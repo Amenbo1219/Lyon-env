@@ -28,11 +28,11 @@ cd Lyon-env
 ```
 Docker-compose をビルドする
 ```bash
-docker compose build
+docker-compose build --no-cahce
 ```
 ビルドしたイメージを起動する
 ```bash
-docker compose up -d
+docker-compose up -d
 ```
 ブラウザから http://接続したホスト名:9999 にログインする
 
