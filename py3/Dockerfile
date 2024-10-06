@@ -16,11 +16,6 @@ RUN apt-get update && apt-get install -y \
 &&  apt-get clean \
 &&  rm -rf /var/lib/apt/lists/*
 
-# PyTorchのインストール
-
-RUN pip install torch==2.4.1+cu121 torchvision==0.19.1+cu121 torchaudio==2.4.1+cu121 --index-url https://download.pytorch.org/whl/cu121
-
-
 # 研究室用追加パッケージ
 RUN pip install --no-cache-dir praat-parselmouth
 
@@ -28,6 +23,8 @@ RUN pip install --no-cache-dir praat-parselmouth
 COPY requirements.txt /install/requirements.txt
 RUN pip install --upgrade pip
 RUN pip install -r /install/requirements.txt
+# PyTorchのインストール
+RUN pip install torch==2.4.1+cu121 torchvision==0.19.1+cu121 torchaudio==2.4.1+cu121 --index-url https://download.pytorch.org/whl/cu121
 
 # TensorFlowのログレベルを設定
 ENV TF_CPP_MIN_LOG_LEVEL=2
